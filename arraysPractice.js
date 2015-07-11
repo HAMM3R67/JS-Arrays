@@ -6,6 +6,7 @@ var arr = [10,20,30];
 
   function first (arr) {
    var first = arr[0]
+    return first  
   }
 first(arr);
 
