@@ -81,11 +81,11 @@ var odds = [];
  function divider (nums, evens, odds){
    var mainARR = [];
    for(var i = 0; i < nums.length; i++){
-    if((nums[i] % 2) !== 0) {
+    if((nums[i] % 2) === 0) {
      evens.push(nums[i]);
     
     }
-      if((nums[i] % 2) === 0) {      
+      if((nums[i] % 2) !== 0) {      
     odds.push(nums[i]);
    
       }
