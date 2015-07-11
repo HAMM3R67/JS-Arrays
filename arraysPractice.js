@@ -4,8 +4,10 @@
 var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
-  //Code Here
-
+  function first (arr) {
+   var first = arr[0]
+  }
+first(arr);
 
 //Next problem
 
