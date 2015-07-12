@@ -123,7 +123,12 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var str = 'this is my sentence';
 //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
-  //Code Here
+  function reverse (str) {
+    var myStr = str.split('');
+    myStr.reverse()
+    var str = myStr.join('')
+    return str
+  }
 
 
 //Next Problem
