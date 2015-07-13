@@ -148,7 +148,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+  function removeItem(myGroceryList, 'corndogs') {
+    for(var i=0; i<myGroceryList.length; i++){
+      if ('str' === myGroceryList[i]) {
+        myGroceryList.splice(i,1)
+      }
+    }
+    return myGroceryList
+  }
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -160,8 +167,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
-
-  //Code Here
+   
+  function maker(value,) {
+    var arr = [];
+    arr.length = 215
+    
+  }
 
 
 
@@ -172,7 +183,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
+  function addTen(numbers) {
+    for (var i = 0; i < numbers.length; i++) {
+     numbers [i] = parseInt(numbers[i]);
+     numbers[i] +=10;
+    }
+     return numbers;
+  }
 
 
 
