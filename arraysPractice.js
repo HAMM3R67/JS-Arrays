@@ -148,14 +148,25 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   myGroceryList then return the new, updated grocery list.
 */
 
-  function removeItem(myGroceryList, 'corndogs') {
-    for(var i=0; i<myGroceryList.length; i++){
-      if ('str' === myGroceryList[i]) {
-        myGroceryList.splice(i,1)
+
+  function removeItem(myGroceryListArray, food) {
+    for(var i=0; i<myGroceryListArray.length; i++){
+      if (myGroceryListArray[i] === food) {
+        myGroceryListArray.splice(i,1)
       }
     }
     return myGroceryList
   }
+
+removeItem(myGroceryList, 'corndogs')
+
+function addItem() {
+  myGroceryList.push('corndogs')
+  return myGroceryList
+  }
+
+
+addItem();
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -321,7 +332,7 @@ of Data is to have an Array full of objects. */
 
 //Create an empty array called users.
 
-  //Code Here
+  var users = [];
 
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
@@ -334,7 +345,28 @@ var user1 = {
     username: 'infiniateLoop'
 };
 
-//Your Code Here
+var users = [];
+
+var user1 = {
+    name: 'Tyler McGinnis',
+    email: 'tylermcginnis33@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniateLoop'  
+};
+var user2 = {
+      name: 'Trevor Schauerhamer',
+      email: 'tchammer@gmail.com',
+      password: 'Thunderbirds4Life',
+      username: 'HAMM3R67'
+};
+var user3 = {
+      name: 'Oliver Schauerhamer',
+      email: 'odhamer@gmail.com',
+      password: 'ImAbaby4Now',
+      username: 'OllieDee'
+};
+
+users.push(user1, user2, user3);
 
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
@@ -344,7 +376,11 @@ and those objects contain properties about the specific person you follow.*/
 objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
 Once you find the particular index he's located in, delete him from the array.*/
 
-  //Code Here
+  for(var i=0; i < users.length; i++) {
+    if(users[i] === user1) {
+      users.splice(i, 1);
+    }
+  }
 
 //The activity we just did is very much how data works in 'the real world'.
 
